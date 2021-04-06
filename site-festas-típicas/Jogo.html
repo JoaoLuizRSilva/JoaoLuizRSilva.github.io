@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo-San Fermín</title>
+    <link rel="stylesheet" type="text/css" href="Css/Css_Jogo.css">
+    <link rel="stylesheet" href="Css/Css_Foooter.css">
+    <link rel="stylesheet" href="Css/Css_Audio.css">
+    <script src="./js/jquery.min.js"></script>
+	<script src="./js/quiz-plugin.js"></script>
+    <script>
+        $(function(){
+            let options = {message: "Você acertou "
+                , questions: [{id:1
+                    , question: "1-¿A qué hora empiezan los Sanfermines?"  
+                    , items :["A las doce.", "Alrededor de las nueve de la mañana, con el encendido oficial de las luces del bar para atender los primeros almuerzos.", "No hay un tiempo establecido. La gente, procedente de todos los rincones, acude en masa a la Plaza del Ayuntamiento. En cierto momento, sin saber por qué, la juventud de la región saltan el portón y entran al interior del ayuntamiento. Se desata la locura colectiva y se lanza un cohete para señalar que la fiesta está comenzando.", "A las 24 horas"]
+                    , correct: 0
+                }
+                , {id:2
+                    , question: "2- ¿Están todas las personas de acuerdo con la tauromaquia?"
+                    , items :["No hay protestas contra.", "Hay muchas protestas de la gente contra.", "Los toros son muy bien tratados.", "Las personas se dan cuenta de algunos abusos, pero aún no han hecho nada."]
+                    , correct: 1
+                }
+                , {id:3
+                    , question: "3- ¿Cuántos metros hay desde los Corrales de Santo Domingo hasta la Plaza de Toros?"
+                    , items :["678 metros", "810 metros", "850 metros", "875 metros"]
+                    , correct: 3
+                }
+                , {id:4
+                    , question: "4- ¿Dónde se canta pobre de mí?"
+                    , items :["En la Plaza del Ayuntamiento.", "En la Plaza de Toros.", "En los Corrales de Santo Domingo.", "En la Plaza del Castillo."]
+                    , correct: 0
+                }]
+            }
+            $(".quiz").quiz(options);
+        })
+    </script>
+</head>
+<body>
+     <main> 
+        <header> 
+            <div class="container-logo">
+                <div class="logo-texto">
+                    <h1>Juego</h1>
+                </div>
+            </div>
+            <nav>
+             <ul>
+                 <li><a href="index.html">Fiesta de San Fermín </a> </li>
+                <li><a href="Jogo.html">Juego</a> </li>
+             </ul>
+            </nav>
+        </header> 
+        <div class="jogodeperguntas">
+            <h1>comprueba Tus Conocimientos</h1>
+        </div>
+        <div class="audios">
+       <h3>Audio de la pregunta 1</h3>
+            <audio src="audio/Questão 1.mp3" controls></audio>
+            <h3>Audio de la pregunta 2</h3>
+            <audio src="audio/Questão 2.mp3" controls></audio>
+            <h3>Audio de la pregunta 3</h3>
+            <audio src="audio/Questão 3.mp3" controls></audio>
+            <h3>Audio de la pregunta 4</h3>
+            <audio src="audio/Questão 4.mp3" controls></audio>
+        </div>
+         <div class="quiz"></div>
+             <br>
+            <footer>
+               <div class="container">
+                   <div class="row">
+                       <div class="footer-col">
+                           <h4>Cefet-NF</h4>
+                           <ul>
+                               <li>
+                                   <a href="http://www.cefet-rj.br/index.php/apresentacao" target="blank">Apresentação</a>
+                                   <a href="http://www.cefet-rj.br/index.php/direcao-geral" target="blank">Direção</a>
+                                   <a href="http://www.cefet-rj.br/index.php/conselhos-2" target="blank">Conselhos</a>
+                                   <a href="http://www.cefet-rj.br/index.php/ouvidoria" target="blank">Ouvidoria</a>
+                               </li>
+                           </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Sobre Nós</h4>
+                            <ul>
+                                <li>
+                                    <a href="https://github.com/LuizGabrielDeSouzaOliveira" target="blank">Luiz Gabriel</a>
+                                    <a href="https://github.com/JoaoLuizRSilva" target="blank">João Luiz</a>
+                                    <a href="https://github.com/Kauavillan" target="blank">Kauã</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-col"> 
+                            <h4>Contato</h4>
+                            <ul>
+                                <li>
+                                    <a href="https://www.instagram.com/youthandcode/" target="blank">Instagram</a>
+                                    <a href="https://mail.google.com/mail/u/5/#inbox?compose=GTvVlcSGMTCKwqkJvzxwkDKFxnkwDZcXjvpmfVkMKKtfdDffXzFPJfWcrkshsmTkcRZvqBKCKMZlg" target="blank">Gmail</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Páginas</h4>
+                            <ul>
+                                <li>
+                                    <a href="index.html">Página Inicial</a>
+                                    <a href="Jogo.html">Jogo</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>   
+        </footer>
+        </main> 
+    </body>
+</html>

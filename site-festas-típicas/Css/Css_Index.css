@@ -1,0 +1,141 @@
+body {
+    height: 100%;
+    margin: 0;
+    background-image: url(Img/Vermelho.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+main {
+    background-color:rgba(255, 255, 255, 0.486);
+    margin: 0 3%;
+}
+
+header
+{
+width: 100%;
+background-color: rgba(0, 162, 255, 0.616);
+display: flex;
+justify-content: space-around;
+align-items: center;
+text-align: center;
+padding: 20px 0;
+}
+header a {
+    margin-top:5px;
+    padding: 0;
+}
+header ul {
+    padding: 0;
+}
+.logo-texto
+{
+ margin: auto;
+ color: white;
+}
+nav li
+{
+ display:inline-block;
+ margin: 0 10px;
+}
+nav li a
+{
+ font-size: 24px;
+ text-decoration: none;
+ color: rgb(255, 255, 255);
+ padding: 10px 15px;
+ border-radius: 12px;
+}
+nav li a:hover
+{
+ background-color: rgba(42, 56, 253, 0.315);
+ 
+}
+
+ul {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+
+ a i {
+     color: rgb(255, 72, 0);
+ }
+article p, li {
+ margin-left: 10px;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ font-size: 25px;
+color: rgb(41, 40, 40);
+}
+
+
+#mapa {
+    text-align: center;
+}
+
+a :link{
+    color: blue;
+}
+ a:active {
+    color: grey;
+}
+a :visited {
+    color: blue;
+}
+ li :hover {
+    background-color: rgba(95, 158, 160, 0.753);
+    border-radius: 4px;
+}
+
+.box-col {
+    margin: 30%;
+}
+.box {
+    float: left;
+    padding: 5px;
+}
+.video {
+    margin-left: 20px;
+}
+figure {
+    margin-left: 50px;
+}
+img {
+    width: auto;
+    height: auto;
+    max-height: 500px;
+    max-width: 100%;
+    border-radius: 7px;
+    border: rgba(187, 94, 7, 0.712) 2px solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 600px)
+{
+    ul {
+        padding-left: 0;
+    }
+    article {
+        text-align: center;
+    }
+}
+h2, h3 {
+    font-family: 'RocknRoll One', sans-serif;
+}
+article h2, h3{
+    margin-left: 5px;
+}
+figure a {
+    color: rgb(41, 40, 40);
+
+}
+figure :hover {
+    text-decoration: underline;
+}
+#t{
+    font-size: 40px;
+}
