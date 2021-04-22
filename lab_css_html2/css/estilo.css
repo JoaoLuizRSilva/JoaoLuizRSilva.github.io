@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+body{
+    font-size: 80%;
+    background-color: white;
+    border: solid black 4px;
+    max-width: 940px;
+}
