@@ -3,6 +3,45 @@
 body{
     font-size: 80%;
     background-color: white;
-    border: solid black 4px;
     max-width: 940px;
+    min-width: 720px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    border: solid black 4px;
+}
+header{
+    background-color: lightgray;
+    border-radius: 15px;
+    text-align: center;
+    width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: auto;
+}
+nav{
+    background-color: white;
+}
+nav:hover{
+    color: red;
+    font-size: 20px;
+}
+section{
+    text-align: center;
+    width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: auto;
+}
+img{
+    width: 290px;
+}
+footer{
+    background-color: lightgray;
+    border-radius: 15px;
+    text-align: center;
+    width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: auto;
 }
