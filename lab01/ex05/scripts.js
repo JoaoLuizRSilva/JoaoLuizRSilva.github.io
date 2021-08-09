@@ -1,17 +1,17 @@
-let C = 0;
-let N = 2;
+let controle;
+let numero = 2;
 let contDiv;
-while(N<=1000){
-    C = 1;
+while(numero<=1000){
+    controle = 1;
     contDiv = 0;
     do{
-        if(N%C==0){
+        if(numero%controle == 0){
             contDiv=contDiv+1;
         }
-    C = C + 1;
-    }while(C > N);
-    if (contDiv=2){
-        console.log(N)
+        controle++;
+    }while(controle > numero);
+    if (contDiv == 2){
+        console.log(numero)
     }
-    N = N + 1;
+    numero++;
 }
