@@ -1,14 +1,17 @@
-let limite = 1000;
-for (let number = 2; number <= limite; number++){
-    let isCousin = true;
-
-    for (let divider = 2; divider < number; divider++){
-        if (number % divider === 0){
-            isCousin = false;
-            break;
-        }
+function numeroPrimo(n1, n2) {
+    let numero = new Array();
+    for (var c = n1; c <= n2; c++) {
+      if (primo(c)){
+        numero.push(c);
+      }
     }
-    if (isCousin){
-        console.log(number);
-    }
-}
+    return numero;
+  }
+  function primo(n2) {
+    for(let c = 2; c <n2; c++)
+      if(n2 % c === 0) {
+          return false
+      };
+    return n2 > 1;
+  }
+  console.log(numeroPrimo(5, 80));
