@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salário</title>
+</head>
+<body>
+    <h1>Salário</h1>
+    <p>Salário: <input type="number" name="txtn1" id="txtn1"></p>
+    <p>Percentual de reajuste: <input type="number" name="txtn2" id="txtn2"></p>
+    <input type="button" value="Calcular" onclick="salario()">
+    <div id="resultado">Resultado</div>
+    <script>
+        function salario(){
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.querySelector('input#txtn2')
+            var resultado = window.document.getElementById('resultado')
+            var salario = Number(tn1.value)
+            var percentual = Number(tn2.value)
+            var NovoSalario = salario + (salario*(percentual/100))
+            resultado.innerHTML = `Novo salário: ${NovoSalario.toLocaleString('pt-br', {style: 'currency', currency:'BRL'})}`
+        }
+    </script>
+</body>
+</html>

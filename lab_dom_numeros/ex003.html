@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número primo</title>
+</head>
+<body>
+    <h1>Número primo</h1>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="button" value="É um número primo?" onclick="primo()">
+    <div id="resultado">Resultado</div>
+    <script>
+        function primo(){
+            var tn1 = window.document.getElementById('txtn1')
+            var resultado = window.document.getElementById('resultado')
+            var numero = Number(tn1.value)
+            var c = 1
+            var contDiv = 0
+            while(c < numero){
+                if(numero % c === 0){
+                    contDiv = contDiv + 1
+                }
+                c = c + 1
+            }
+            if(contDiv >= 2){
+                resultado.innerHTML = `<strong>${numero}</strong> não e primo.`
+            }else{
+                resultado.innerHTML = `<strong>${numero}</strong> é primo.`
+            }
+        }
+    </script>
+</body>
+</html>

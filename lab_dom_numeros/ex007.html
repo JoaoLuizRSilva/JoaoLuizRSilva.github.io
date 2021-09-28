@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hipotenusa</title>
+</head>
+<body>
+    <h1>Hipotenusa</h1>
+    <p>Nota01: <input type="number" name="txtn1" id="txtn1"></p>
+    <p>Nota02: <input type="number" name="txtn2" id="txtn2"></p>
+    <p>Nota03: <input type="number" name="txtn3" id="txtn3"></p>
+    <input type="button" value="Calcular media" onclick="media()">
+    <div id="resultado">Resultado</div>
+    <script>
+        function media(){
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var tn3 = window.document.getElementById('txtn3')
+            var resultado = window.document.getElementById('resultado')
+            var nota01 = Number(tn1.value)
+            var nota02 = Number(tn2.value)
+            var nota03 = Number(tn3.value)
+            var mediaFinal = (nota01 * 2 + nota02 * 3 + nota03 * 5) / 10
+            resultado.innerHTML = `Valor da média final: ${mediaFinal}`
+        }
+    </script>
+</body>
+</html>
