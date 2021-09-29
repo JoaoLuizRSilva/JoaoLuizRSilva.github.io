@@ -11,14 +11,6 @@
     <p>Temperatura em Fahrenheit: <input type="number" name="txtn1" id="txtn1"></p>
     <input type="button" value="Converter para Celsius" onclick="conversorDeTemperatura()">
     <div id="resultado">Resultado</div>
-    <script>
-        function conversorDeTemperatura(){
-            var tn1 = window.document.getElementById('txtn1')
-            var resultado = window.document.getElementById('resultado')
-            var fahrenheit = Number(tn1.value)
-            var celsius = ((fahrenheit - 32)/9) * 5
-            resultado.innerHTML = `Temperatura em Fahrenheit: ${celsius.toFixed(2)}`
-        }
-    </script>
+    <script src="ex006.js"></script>
 </body>
 </html>
