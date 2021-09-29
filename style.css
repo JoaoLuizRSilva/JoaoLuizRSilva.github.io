@@ -1,14 +1,13 @@
 @charset "UTF-8";
-
 *{
     font-family: sans-serif;
 }
 body{
-    background-image: linear-gradient(35deg, #F23DA0, #0B078C);
+    background-color: #060447;
 }
 header{
     border-radius: 5px;
-    background-color: #6204BF;
+    background-color: #23468C;
     width: 85%;
     margin: auto;
     padding: 10px;
@@ -23,8 +22,9 @@ main{
     margin: auto;
 }
 footer{
+    color: white;
     border-radius: 5px;
-    background-color: #23468C;
+    background-color: #0e1d3a;
     width: 85%;
     margin: auto;
     padding: 10px;
@@ -38,12 +38,13 @@ p{
     font-size: 1.3em;
 }
 a{
-    color: #B7AFE0;
+    color: black;
     font-size: 20px;
     text-decoration: none;
-    -webkit-text-stroke-width: 0.40px;
-    -webkit-text-stroke-color: #000;
 }
 div{
     text-align: center;
+}
+a#rodaPe{
+    color: white;
 }
