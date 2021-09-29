@@ -8,25 +8,23 @@
 </head>
 <body>
     <h1>Dias de vida</h1>
-    <input type="date" id="start" placeholder="Data inicial">
-    <input type="date" id="end" placeholder="Data final">
-    <input type="text">
-    <button>calcular</button>
-    <h1>A diferença é de <span>?</span> dia(s)</h1>
+    <input type="date" id="nascimento" placeholder="Data inicial">
+    <input type="date" id="atual" placeholder="Data final">
+    <button>Calcular</button>
+    <h1>Você tem  <span>?</span> dias de vida</h1>
     <script>
-        /*
-        const inputStart = document.querySelector('#start')
-        const inputEnd = document.querySelector('#end')
+        const inputnascimento = document.querySelector('#nascimento')
+        const inputatual = document.querySelector('#atual')
         const button = document.querySelector('button')
         const span = document.querySelector('h1 > span')
         function calcularDiferenca(){
-            let start = inputStart.value
-            let end = inputEnd.value
+            let nascimento = inputnascimento.value
+            let atual = inputatual.value
 
-            start = new date(start)
-            end = new date(end)
+            nascimento = new Date(nascimento)
+            atual = new Date(atual)
 
-            let diferencaEmTempo = math.abs(end - start)
+            let diferencaEmTempo = Math.abs(atual - nascimento)
             let tempoEmUmDia = 1000 * 60 * 60 * 24
             let difenrencaEmDias = diferencaEmTempo / tempoEmUmDia
 
@@ -36,7 +34,6 @@
             const diferencaDeDias = calcularDiferenca()
             span.innerHTML = diferencaDeDias
         })
-        */
     </script>
 </body>
 </html>
