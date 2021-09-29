@@ -11,14 +11,6 @@
     <input type="text" name="txtn1" id="txtn1">
     <input type="button" value="Inverter" onclick="inverterString()">
     <div id="resultado">Resultado</div>
-    <script>
-        function inverterString(){
-            var tn1 = window.document.getElementById('txtn1')
-            var resultado = window.document.getElementById('resultado')
-            var texto = String(tn1.value)
-            var textoInvertido = texto.split("").reverse().join("")
-            resultado.innerHTML = textoInvertido
-        }
-    </script>
+    <script src="ex001.js"></script>
 </body>
 </html>
