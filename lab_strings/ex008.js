@@ -9,13 +9,13 @@ function calcularDiferenca(){
     data01 = new Date(data01)
     data02 = new Date(data02)
 
-    let diferencaEmTempo = Math.abs(data02 - data01)
+    let diferencaEmTempo = Math.abs(data01 - data02)
     let tempoEmUmaSemana = 1000 * 60 * 60 * 24 * 7
     let diferencaEmSemanas = diferencaEmTempo / tempoEmUmaSemana
-
+    diferencaEmSemanas = Math.floor(diferencaEmSemanas)
     return diferencaEmSemanas
 }
 button.addEventListener('click', () => {
 const diferencaDeSemanas = calcularDiferenca()
-span.innerHTML = diferencaDeSemanas.toFixed(0)
+span.innerHTML = diferencaDeSemanas
 })
