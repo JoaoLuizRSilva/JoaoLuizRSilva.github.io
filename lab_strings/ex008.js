@@ -10,7 +10,7 @@ function calcularDiferenca(){
     data02 = new Date(data02)
 
     let diferencaEmTempo = Math.abs(data02 - data01)
-    let tempoEmUmaSemana = 1000 * 60 * 60 * 24 * 8
+    let tempoEmUmaSemana = 1000 * 60 * 60 * 24 * 7
     let diferencaEmSemanas = diferencaEmTempo / tempoEmUmaSemana
 
     return diferencaEmSemanas
