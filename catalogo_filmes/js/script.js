@@ -4,7 +4,6 @@ window.onload = function () {
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             let filmesList = JSON.parse(this.responseText);
-            console.log(filmesList)
             let body = document.getElementsByTagName("body")[0];
             for (filme of filmesList) {
                 body.appendChild(montaDiv(filme));
