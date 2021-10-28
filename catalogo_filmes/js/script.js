@@ -62,7 +62,7 @@ function montaDiv(filme) {
     semelhantes.appendChild(semelhantesText);
     divFilme.appendChild(semelhantes);
 
-    let listaSemelhantes = document.createElement("ul"); //estou trabalhando aqui
+    let listaSemelhantes = document.createElement("ul"); //semelhantes
     for (let controle = 0; controle < filme.titulosSemelhantes.length; controle++) {
         let titulosSemelhante = document.createElement("li");
         let titulosSemelhanteText = document.createTextNode(filme.titulosSemelhantes[controle]);
@@ -93,7 +93,7 @@ function montaDiv(filme) {
     let listaOpinioes = document.createElement("ul");
     for (let controle = 0; controle < filme.opinioes.length; controle++) {
         let avaliacao = document.createElement("li");
-        let avaliacaoText = document.createTextNode(filme.opinioes);
+        let avaliacaoText = document.createTextNode(`Nota: ${filme.opinioes[controle].rating}.  Comentários: ${filme.opinioes[controle].descricao}`);
         avaliacao.appendChild(avaliacaoText);
         listaOpinioes.appendChild(avaliacao);
     }
@@ -101,11 +101,3 @@ function montaDiv(filme) {
 
     return divFilme;
 }
-/*
-        <h3>filme.opinioes</h3>
-        <ul>
-            <li>filme.rating</li>
-            <li>filmes.descricao</li>
-        </ul>
-    </div>
-*/
