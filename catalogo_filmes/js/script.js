@@ -34,11 +34,16 @@ function montaDiv(filme) {
 
     let classificacaoIndicativa = document.createElement("p");
     classificacaoIndicativa.classList.add("classificacao")
-    let classificacaoIndicativaText
+    let classificacaoIndicativaText = document.createTextNode(filme.classificacao)
+    if (filme.classificacao >= 18) {
+        classificacaoIndicativa.style.backgroundColor = '#8C0303'
+    } else if (filme.classificacao > 14) {
+        classificacaoIndicativa.style.backgroundColor = '#F29F05'
+    } else {
+        classificacaoIndicativa.style.backgroundColor = '#038C4C'
+    }
     if (filme.classificacao == 0) {
         classificacaoIndicativaText = document.createTextNode(`Livre`)
-    } else {
-        classificacaoIndicativaText = document.createTextNode(filme.classificacao)
     }
     classificacaoIndicativa.appendChild(classificacaoIndicativaText);
     divFilme.appendChild(classificacaoIndicativa);
