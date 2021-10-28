@@ -67,10 +67,60 @@ function montaDiv(filme) {
     semelhantes.appendChild(semelhantesText);
     divFilme.appendChild(semelhantes);
 
-    let listaSemelhantes = document.createElement("ul"); //semelhantes
+    let listaSemelhantes = document.createElement("ul");
     for (let controle = 0; controle < filme.titulosSemelhantes.length; controle++) {
         let titulosSemelhante = document.createElement("li");
         let titulosSemelhanteText = document.createTextNode(filme.titulosSemelhantes[controle]);
+        let filmeId = filme.titulosSemelhantes[controle];
+        let nomeSemelhante;
+        switch (filmeId) {
+            case 1:
+                nomeSemelhante = "Better Call Saul";
+                break;
+            case 2:
+                nomeSemelhante = "Breaking Bad";
+                break;
+            case 3:
+                nomeSemelhante = "House of Cards";
+                break;
+            case 4:
+                nomeSemelhante = "Narcos";
+                break;
+            case 5:
+                nomeSemelhante = "Carros";
+                break;
+            case 6:
+                nomeSemelhante = "Carros 2";
+                break;
+            case 7:
+                nomeSemelhante = "Uma Família da Pesada";
+                break;
+            case 8:
+                nomeSemelhante = "Valente";
+                break;
+            case 9:
+                nomeSemelhante = "Friends";
+                break;
+            case 10:
+                nomeSemelhante = "House";
+                break;
+            case 11:
+                nomeSemelhante = "Mãos talentosas";
+                break;
+            case 12:
+                nomeSemelhante = "Família Moderna";
+                break;
+            case 13:
+                nomeSemelhante = "Scarface";
+                break;
+            case 14:
+                nomeSemelhante = "That '70s show";
+                break;
+            case 15:
+                nomeSemelhante = "Zumbilândia";
+                break; 
+        }
+        titulosSemelhanteText = document.createTextNode(nomeSemelhante)
         titulosSemelhante.appendChild(titulosSemelhanteText);
         listaSemelhantes.appendChild(titulosSemelhante);
     }
