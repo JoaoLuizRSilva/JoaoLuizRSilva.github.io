@@ -4,9 +4,9 @@ $(function(){
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             let receitasList = JSON.parse(this.responseText);
-            let body = $("body")[0];
+            let body = $("body");
             for (receita of receitasList) {
-                body.appendChild(montaLista(receita));
+                body.append(montaLista(receita));
             }
         }
     }
@@ -14,51 +14,35 @@ $(function(){
     xhttp.send();
 });
 function montaLista(receita) {
-    //let texto = $(".receitas")//.html(`<h2>${receita.descricao}</h2>`);
-    //texto.text(receita.nome);
+    let divReceita = $(".receitas");
+    let titulo = $("<h2>").text(receita.nome);
+    divReceita.append(titulo);
 
-    let divReceita = document.createElement("div");
-    divReceita.classList.add("receita");
-    let titulo = document.createElement("h2");
-    let tituloText = document.createTextNode(receita.nome);
-    titulo.appendChild(tituloText);
-    divReceita.appendChild(titulo);
+    let descricao = $("<p>").text(receita.descricao);
+    divReceita.append(descricao);
 
-    let descricao = document.createElement("p");
-    let descricaoText = document.createTextNode(receita.descricao);
-    descricao.appendChild(descricaoText);
-    divReceita.appendChild(descricao);
+    let foto = $("<img>").attr("src", receita.foto);
+    divReceita.append(foto);
 
-    let foto = document.createElement("img");
-    foto.src = receita.foto;
-    divReceita.appendChild(foto);
+    let tituloIngredientes = $("h3").text("Ingredientes: ");
+    divReceita.append(tituloIngredientes);
 
-    let tituloIngredientes = document.createElement("h3");
-    let tituloIngredientesText = document.createTextNode("Ingredientes:");
-    tituloIngredientes.appendChild(tituloIngredientesText);
-    divReceita.appendChild(tituloIngredientes);
-
-    let listaIngrediente = document.createElement("ul");
+    let listaIngrediente = $("<ul>")
     for (let controle = 0; controle < receita.ingredientes.length; controle++) {
-        let ingrediente = document.createElement("li");
-        let ingredienteText = document.createTextNode(receita.ingredientes[controle]);
-        ingrediente.appendChild(ingredienteText);
-        listaIngrediente.appendChild(ingrediente);
+        let ingrediente = $("<li>").text(receita.ingredientes[controle])
+        listaIngrediente.append(ingrediente);
     }
-    divReceita.appendChild(listaIngrediente);
+    divReceita.append(listaIngrediente);
 
-    let tituloPreparo = document.createElement("h3");
-    let tituloPreparoText = document.createTextNode("Preparo:");
-    tituloPreparo.appendChild(tituloPreparoText);
-    divReceita.appendChild(tituloPreparo)
-    let listaPreparo = document.createElement("ol");
+    let tituloPreparo = $("<h3>").text("Preparo: ");
+    divReceita.append(tituloPreparo);
+
+    let listaPreparo = $("<ol>");
     for (let controle = 0; controle < receita.preparo.length; controle++) {
-        let preparo = document.createElement("li");
-        let preparoText = document.createTextNode(receita.preparo[controle]);
-        preparo.appendChild(preparoText);
-        listaPreparo.appendChild(preparo);
+        let preparo = $("<li>").text(receita.preparo[controle]);
+        listaPreparo.append(preparo);
     }
-    divReceita.appendChild(listaPreparo);
+    divReceita.append(listaPreparo);
 
     return divReceita;
 }

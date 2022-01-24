@@ -9,12 +9,23 @@ function montaDiv(receita) {
     divReceita.classList.add("receita");
     let titulo = document.createElement("h2");
     let tituloText = document.createTextNode(receita.nome);
+    titulo.appendChild(tituloText);
+    divReceita.appendChild(titulo);
+
     let descricao = document.createElement("p");
     let descricaoText = document.createTextNode(receita.descricao);
+    descricao.appendChild(descricaoText);
+    divReceita.appendChild(descricao);
+
     let foto = document.createElement("img");
     foto.src = receita.foto;
+    divReceita.appendChild(foto);
+
     let tituloIngredientes = document.createElement("h3");
-    let tituloIngredientesText = document.createTextNode("Ingredientes:"); 
+    let tituloIngredientesText = document.createTextNode("Ingredientes:");
+    tituloIngredientes.appendChild(tituloIngredientesText);
+    divReceita.appendChild(tituloIngredientes);
+
     let listaIngrediente = document.createElement("ul");
     for (let controle = 0; controle < receita.ingredientes.length; controle++) {
         let ingrediente = document.createElement("li");
@@ -22,8 +33,12 @@ function montaDiv(receita) {
         ingrediente.appendChild(ingredienteText);
         listaIngrediente.appendChild(ingrediente);
     }
+    divReceita.appendChild(listaIngrediente);
+
     let tituloPreparo = document.createElement("h3");
     let tituloPreparoText = document.createTextNode("Preparo:");
+    tituloPreparo.appendChild(tituloPreparoText);
+    divReceita.appendChild(tituloPreparo)
     let listaPreparo = document.createElement("ol");
     for (let controle = 0; controle < receita.preparo.length; controle++) {
         let preparo = document.createElement("li");
@@ -31,16 +46,7 @@ function montaDiv(receita) {
         preparo.appendChild(preparoText);
         listaPreparo.appendChild(preparo);
     }
-    titulo.appendChild(tituloText);
-    descricao.appendChild(descricaoText);
-    tituloIngredientes.appendChild(tituloIngredientesText);
-    tituloPreparo.appendChild(tituloPreparoText);
-    divReceita.appendChild(titulo);
-    divReceita.appendChild(descricao);
-    divReceita.appendChild(foto);
-    divReceita.appendChild(tituloIngredientes);
-    divReceita.appendChild(listaIngrediente);
-    divReceita.appendChild(tituloPreparo);
     divReceita.appendChild(listaPreparo);
+
     return divReceita;
 }
