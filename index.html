@@ -1,99 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protifólio</title>
-    <link rel="shortcut icon" href="imagens/favicon-16x16.png" type="image/x-icon">
+    <title>Portfolio | João Luiz</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>João Luiz</h1>
-        <h2>Estudante técnico em informática intergrado ao ensino médio</h2>
-    </header>
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+        </ul>
+    </nav>
     <main>
-        <h1>Bem-vindo(a) ao meu site!</h1>
-        <h2>Quem eu sou?</h2>
-        <p>Meu nome é João Luiz Rezende Silva, tenho 17 anos e atualmente estou cursando informática, integrado ao ensino médio.</p>
-        <p>Ainda não tenho conhecimentos avançados em informática, mas estou buscando melhorar com o passar do tempo.</p>
-        <div>
-            <picture class="imagem">
-                <source media="(max-width: 900px)" srcset="imagens/image-p.jpg" type="image/jpeg">
-                <source media="(max-width: 1200px)" srcset="imagens/image-m.jpg" type="image/jpeg">
-                <img src="imagens/image-g.jpg" alt="Imagen Notebook">
-            </picture>
-        </div>
-        <h2>Meus projétos</h2>
-        <ul>
-            <li><a href="https://kauavillan.github.io/Site-San-Fermin/" target="_blank" rel="author">Site de espanhol</a></li>
-            <li>Lab1</li>
-            <ul>
-                <li><a href="lab1/01.html" target="_blank" rel="external">Atividade 01</a></li>
-                <li><a href="lab1/02.html" target="_blank" rel="external">Atividade 02</a></li>
-                <li><a href="lab1/03.html" target="_blank" rel="external">Atividade 03</a></li>
-                <li><a href="lab1/04.html" target="_blank" rel="external">Atividade 04</a></li>
-                <li><a href="lab1/05.html" target="_blank" rel="external">Atividade 05</a></li>
-                <li><a href="lab1/06.html" target="_blank" rel="external">Atividade 06</a></li>
-            </ul>
-            <li>Lab2</li>
-            <ul>
-                <li><a href="lab2/atividade1.html" target="_blank" rel="external">Atividade 01</a></li>
-                <li><a href="lab2/atividade2.html" target="_blank" rel="external">Atividade 02</a></li>
-                <li><a href="lab2/atividade3.html" target="_blank" rel="external">Atividade 03</a></li>
-                <li><a href="lab2/atividade4.html" target="_blank" rel="external">Atividade 04</a></li>
-                <li><a href="lab2/atividade5.html" target="_blank" rel="external">Atividade 05</a></li>
-                <li><a href="lab2/atividade6.html" target="_blank" rel="external">Atividade 06</a></li>
-            </ul>
-            <li>lab_css_html2</li>
-            <ul>
-                <li><a href="lab_css_html2/lab5.html" target="_blank" rel="external">Atividade 01</a></li>
-            </ul>
-            <li>lab_array</li>
-            <ul>
-                <li><a href="lab_array/ex01/index.html" target="_blank" rel="external">Atividade 01</a></li>
-                <li><a href="lab_array/ex02/index.html" target="_blank" rel="external">Atividade 02</a></li>
-                <li><a href="lab_array/ex03/index.html" target="_blank" rel="external">Atividade 03</a></li>
-                <li><a href="lab_array/ex04/index.html" target="_blank" rel="external">Atividade 04</a></li>
-            </ul>
-            <li>lab_dom_numeros</li>
-            <ul>
-                <li><a href="lab_dom_numeros/ex001.html" target="_blank" rel="external">ex001</a></li>
-                <li><a href="lab_dom_numeros/ex002.html" target="_blank" rel="external">ex002</a></li>
-                <li><a href="lab_dom_numeros/ex003.html" target="_blank" rel="external">ex003</a></li>
-                <li><a href="lab_dom_numeros/ex004.html" target="_blank" rel="external">ex004</a></li>
-                <li><a href="lab_dom_numeros/ex005.html" target="_blank" rel="external">ex005</a></li>
-                <li><a href="lab_dom_numeros/ex006.html" target="_blank" rel="external">ex006</a></li>
-                <li><a href="lab_dom_numeros/ex007.html" target="_blank" rel="external">ex007</a></li>
-            </ul>
-            <li>lab_strings_datas</li>
-            <ul>
-                <li><a href="lab_strings/index.html" target="_blank" rel="external">Lista de tarefas</a></li>
-            </ul>
-            <li>Manipulações no DOM</li>
-            <ul>
-                <li><a href="manipulacoes_dom/index.html" target="_blank" rel="external">Receitas</a></li>
-            </ul>
-            <li><a href="catalogo_filmes/index.html" target="_blank" rel="external">Catalogo de filmes</a></li>
-            <li><a href="web_storage/index.html" target="_blank" rel="external">Web Storage</a></li>
-            <li><a href="JQuery/index.html" target="_blank" rel="external">JQuerry</a></li>
-        </ul>
-        <h2>Game Biologia</h2>
-        <ul>
-            <li><a href="./biologia/game.html" target="_blank" rel="external">Tabuleiro Ecológico</a></li>
-        </ul>
-        <h2>Onde estudo?</h2>
-        <h3>Cefet/Rj, Campus Nova Friburgo</h3>
-        <p>Localizado em um bairro a apenas cinco quilômetros do centro da cidade, é mais um campus a assumir a missão institucional do Cefet/RJ: promover a educação mediante atividades de ensino, pesquisa e extensão que propiciem, de modo reflexivo e crítico, a formação integral (humanística, científica e tecnológica, ética, política e social) de profissionais capazes de contribuir para o desenvolvimento cultural, tecnológico e econômico da sociedade.</p>
-        <p>O campus possui os cursos técnicos integrados ao Ensino Médio em Informática e em Administração. No nível superior, conta com bacharelado em Sistemas de Informação, licenciatura em Física, superior em Gestão de Turismo e Engenharia Elétrica.</p>
-        <p><a href="http://www.cefet-rj.br" target="_blank" rel="external">Acesse o site, do cefet, clicando aqui!</a></p>
+        <section class="container">
+            <div id="sobre">
+                <h1>
+                    Oi 👋, sou o João Luiz
+                    <br>
+                    <span class="text-extra font-3">Web Developer</span>
+                </h1>
+                <p class="text mb-2 mt-2">Desenvolvedor web dedicado com experiência em Python/Django e estágio na Secretaria de Esporte e Lazer de Nova Friburgo, responsável pelo desenvolvimento completo do lado Servido.</p>
+                <a href="https://wa.me/553284910767" class="button mb-2" target="_blank">Fale Comigo</a>
+            </div>
+        </section>
+        <section id="projetos">
+            <span class="font-2">Projetos de Destaque</span>
+            <div class="cards">
+                <div class="card">
+                    <strong>Municipal Sports Management System</strong>
+                    <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni labore iste assumenda. Ex quibusdam tempora, quae possimus labore saepe adipisci nostrum magnam, neque consectetur, nisi voluptatum quo dolore error vel?</p>
+                    <a href="#">Conheça melhor</a>
+                </div>
+                <div class="card">
+                    <strong>Municipal Sports Management System</strong>
+                    <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni labore iste assumenda. Ex quibusdam tempora, quae possimus labore saepe adipisci nostrum magnam, neque consectetur, nisi voluptatum quo dolore error vel?</p>
+                    <a href="#">Conheça melhor</a>
+                </div>
+                <div class="card">
+                    <strong>Municipal Sports Management System</strong>
+                    <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni labore iste assumenda. Ex quibusdam tempora, quae possimus labore saepe adipisci nostrum magnam, neque consectetur, nisi voluptatum quo dolore error vel?</p>
+                    <a href="#">Conheça melhor</a>
+                </div>
+                <div class="card">
+                    <strong>Municipal Sports Management System</strong>
+                    <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni labore iste assumenda. Ex quibusdam tempora, quae possimus labore saepe adipisci nostrum magnam, neque consectetur, nisi voluptatum quo dolore error vel?</p>
+                    <a href="#">Conheça melhor</a>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        <h2>Contato:</h2>
-        <ul>
-            <li><a href="https://github.com/JoaoLuizRSilva" target="_blank" rel="author" id="rodaPe">GitHub</a></li>
-        </ul>
+        <p>&copy; Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
