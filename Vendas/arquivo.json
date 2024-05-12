@@ -1,0 +1,20 @@
+[
+    {
+      "nome": "Mouser Cougar",
+      "url_site": "http://exemplo.com/mouser_cougar",
+      "url_imagem": "http://exemplo.com/imagens/mouser_cougar.jpg",
+      "descrição": "O melhor mouse gamer barato."
+    },
+    {
+      "nome": "Teclado Redragon K552",
+      "url_site": "http://exemplo.com/teclado_redragon_k552",
+      "url_imagem": "http://exemplo.com/imagens/teclado_redragon_k552.jpg",
+      "descrição": "Teclado mecânico compacto, ideal para jogos."
+    },
+    {
+      "nome": "Headset HyperX Cloud II",
+      "url_site": "http://exemplo.com/headset_hyperx_cloud_ii",
+      "url_imagem": "http://exemplo.com/imagens/headset_hyperx_cloud_ii.jpg",
+      "descrição": "Confortável e com excelente qualidade de som para jogos."
+    }
+]
